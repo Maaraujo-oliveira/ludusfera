@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - Ludusfera</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastro/cadastro.html">Cadastro</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="formulario-cadastro">
+        <h2>Crie sua Conta</h2>
+        <form action="login/login.html" method="post">
+          <div class="form-grupo">
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="form-grupo">
+            <label for="confirm-password">Confirmação de senha:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              required
+            />
+          </div>
+
+          <div class="form-grupo">
+            <label>Áreas de interesse:</label>
+            <div>
+              <label for="int-jogos">Jogos</label>
+              <input
+                type="checkbox"
+                id="int-jogos"
+                name="interesse"
+                value="jogos"
+              />
+            </div>
+            <div>
+              <label for="int-guias">Guias/Detonados</label>
+              <input
+                type="checkbox"
+                id="int-guias"
+                name="interesse"
+                value="guias"
+              />
+            </div>
+            <div>
+              <label for="int-mods">Mods</label>
+              <input
+                type="checkbox"
+                id="int-mods"
+                name="interesse"
+                value="mods"
+              />
+            </div>
+            <div>
+              <label for="int-tutoriais">Tutoriais de Programação</label>
+              <input
+                type="checkbox"
+                id="int-tutoriais"
+                name="interesse"
+                value="tutoriais"
+              />
+            </div>
+            <div>
+              <label for="int-noticias">Notícias</label>
+              <input
+                type="checkbox"
+                id="int-noticias"
+                name="interesse"
+                value="noticias"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-submit">Cadastrar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Ludusfera. Todos os direitos reservados.</p>
+
+        <div class="curriculos">
+          <p>Integrantes:</p>
+          <a href="curriculo/curriculo.html" target="_blank"
+            >Matheus Araujo de Oliveira</a
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
